@@ -1,0 +1,66 @@
+.image-container {
+  position: relative;
+  perspective: 400px;
+  transform: scale(0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+}
+.image-object {
+  object-fit: contain;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: rotateX(0deg) rotateY(5deg);
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 15px -3px rgba(119, 0, 176, 1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-height: 100%;
+}
+
+.payment-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.amount-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.card-element {
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
+}
